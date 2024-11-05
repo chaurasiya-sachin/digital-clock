@@ -16,29 +16,9 @@ function updateClock() {
     document.getElementById('minute-hand').textContent = minuteStr;
     document.getElementById('second-hand').textContent = secondStr;
     document.getElementById('am-pm').textContent = amPm;
-    changeBackgroundImage(now.getHours());
-  }
+}
   
-  function changeBackgroundImage(hours) {
-    let backgroundImage;
-  
-    if (hours >= 6 && hours < 12) {
-      // Morning
-      backgroundImage = 'url("./image/morning.jpg")';
-    } else if (hours >= 12 && hours < 16) {
-      // Afternoon
-      backgroundImage = 'url("./image/afternoon.jp")';
-    } else if (hours >= 16 && hours < 20) {
-      // Evening
-      backgroundImage = 'url("./image/evening.jpg")';
-    } else {
-      // Night
-      backgroundImage = 'url("./image/night.jpg")';
-    }
-  
-    document.body.style.backgroundImage = backgroundImage;
-    document.body.style.backgroundSize = 'cover'; 
-  }
+ 
   
  
   setInterval(updateClock, 1000);

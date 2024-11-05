@@ -6,6 +6,9 @@
 body{
     font-family: Arial, sans-serif;
     color: #fff;
+    background-image: url(/images/background\ img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .main{
     width: 100vw;
